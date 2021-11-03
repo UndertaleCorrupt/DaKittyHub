@@ -1,0 +1,572 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local DaKittyHub = Instance.new("ScreenGui")
+local Enter = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local Sidebar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Soulshatters = Instance.new("TextButton")
+local LumberTycoon2 = Instance.new("TextButton")
+local CrazyMultiverseTimeline = Instance.new("TextButton")
+local GamesLabel = Instance.new("TextLabel")
+local RandomBlueScreenLol = Instance.new("Frame")
+local SoulshattersFrame = Instance.new("Frame")
+local SoulshattersScrollFrame = Instance.new("ScrollingFrame")
+local SweetHeart = Instance.new("TextButton")
+local TuskActFour = Instance.new("TextButton")
+local TrueBadtimeSans = Instance.new("TextButton")
+local HorrorSans = Instance.new("TextButton")
+local HardmodeSans = Instance.new("TextButton")
+local Omori = Instance.new("TextButton")
+local NoMoreDealsChara = Instance.new("TextButton")
+local Gaster = Instance.new("TextButton")
+local SandsUndertale = Instance.new("TextButton")
+local GER = Instance.new("TextButton")
+local BettyVersionTwo = Instance.new("TextButton")
+local DusttrustSans = Instance.new("TextButton")
+local UnderPlayer = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local LumberTycoon2Frame = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local LumberScriptsScrollFrame = Instance.new("ScrollingFrame")
+local BarkUI = Instance.new("TextButton")
+local CrazyMultiverseTimelineFrame = Instance.new("Frame")
+local CrazyMultiverseScrollFrame = Instance.new("ScrollingFrame")
+local AutoFarm = Instance.new("TextButton")
+local Title_4 = Instance.new("TextLabel")
+
+--Properties:
+
+DaKittyHub.Name = "DaKittyHub"
+DaKittyHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DaKittyHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+DaKittyHub.ResetOnSpawn = false
+
+Enter.Name = "Enter"
+Enter.Parent = DaKittyHub
+Enter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Enter.Position = UDim2.new(0.005859375, 0, 0.74198252, 0)
+Enter.Size = UDim2.new(0, 85, 0, 50)
+Enter.Font = Enum.Font.SourceSansBold
+Enter.Text = "Enter"
+Enter.TextColor3 = Color3.fromRGB(0, 0, 0)
+Enter.TextScaled = true
+Enter.TextSize = 14.000
+Enter.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = DaKittyHub
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.Position = UDim2.new(0.005859375, 0, 0.74198252, 0)
+Close.Size = UDim2.new(0, 85, 0, 50)
+Close.Visible = false
+Close.Font = Enum.Font.SourceSansBold
+Close.Text = "Close"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = DaKittyHub
+Main.BackgroundColor3 = Color3.fromRGB(47, 51, 118)
+Main.BackgroundTransparency = 1.000
+Main.Size = UDim2.new(1, 0, 1, 0)
+Main.Visible = false
+
+Sidebar.Name = "Sidebar"
+Sidebar.Parent = Main
+Sidebar.BackgroundColor3 = Color3.fromRGB(47, 51, 118)
+Sidebar.Position = UDim2.new(0.19921875, 0, 0.135568514, 0)
+Sidebar.Size = UDim2.new(0.167317703, 0, 0.724489808, 0)
+
+Title.Name = "Title"
+Title.Parent = Sidebar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.108949415, 0, 0.018108651, 0)
+Title.Size = UDim2.new(0.778210104, 0, 0.100603625, 0)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "DaKittyHub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+ScrollingFrame.Parent = Sidebar
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.199195176, 0)
+ScrollingFrame.Size = UDim2.new(1, 0, 0.448692143, 0)
+
+Soulshatters.Name = "Soulshatters"
+Soulshatters.Parent = ScrollingFrame
+Soulshatters.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Soulshatters.BackgroundTransparency = 1.000
+Soulshatters.Position = UDim2.new(0.108949415, 0, 0.00956970453, 0)
+Soulshatters.Size = UDim2.new(0.778210104, 0, 0.0268053114, 0)
+Soulshatters.Font = Enum.Font.SourceSansBold
+Soulshatters.Text = "Soulshatters"
+Soulshatters.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soulshatters.TextScaled = true
+Soulshatters.TextSize = 14.000
+Soulshatters.TextWrapped = true
+
+LumberTycoon2.Name = "LumberTycoon2"
+LumberTycoon2.Parent = ScrollingFrame
+LumberTycoon2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LumberTycoon2.BackgroundTransparency = 1.000
+LumberTycoon2.Position = UDim2.new(0.108949408, 0, 0.0739567578, 0)
+LumberTycoon2.Size = UDim2.new(0.778210104, 0, 0.0209677666, 0)
+LumberTycoon2.Font = Enum.Font.SourceSansBold
+LumberTycoon2.Text = "Lumber Tycoon 2"
+LumberTycoon2.TextColor3 = Color3.fromRGB(255, 255, 255)
+LumberTycoon2.TextScaled = true
+LumberTycoon2.TextSize = 14.000
+LumberTycoon2.TextWrapped = true
+
+CrazyMultiverseTimeline.Name = "CrazyMultiverseTimeline"
+CrazyMultiverseTimeline.Parent = ScrollingFrame
+CrazyMultiverseTimeline.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrazyMultiverseTimeline.BackgroundTransparency = 1.000
+CrazyMultiverseTimeline.Position = UDim2.new(0.108949415, 0, 0.0367417037, 0)
+CrazyMultiverseTimeline.Size = UDim2.new(0.778210104, 0, 0.0312896147, 0)
+CrazyMultiverseTimeline.Font = Enum.Font.SourceSansBold
+CrazyMultiverseTimeline.Text = "Crazy Multiverse Timeline"
+CrazyMultiverseTimeline.TextColor3 = Color3.fromRGB(255, 255, 255)
+CrazyMultiverseTimeline.TextScaled = true
+CrazyMultiverseTimeline.TextSize = 14.000
+CrazyMultiverseTimeline.TextWrapped = true
+
+GamesLabel.Name = "GamesLabel"
+GamesLabel.Parent = Sidebar
+GamesLabel.BackgroundColor3 = Color3.fromRGB(255, 89, 89)
+GamesLabel.Position = UDim2.new(0, 0, 0.136820927, 0)
+GamesLabel.Size = UDim2.new(1, 0, 0.0623742454, 0)
+GamesLabel.Font = Enum.Font.SourceSansBold
+GamesLabel.Text = "Games:"
+GamesLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+GamesLabel.TextScaled = true
+GamesLabel.TextSize = 14.000
+GamesLabel.TextWrapped = true
+
+RandomBlueScreenLol.Name = "RandomBlueScreenLol"
+RandomBlueScreenLol.Parent = Main
+RandomBlueScreenLol.BackgroundColor3 = Color3.fromRGB(47, 51, 118)
+RandomBlueScreenLol.Position = UDim2.new(0.372395843, 0, 0.135568514, 0)
+RandomBlueScreenLol.Size = UDim2.new(0.458984375, 0, 0.724489808, 0)
+
+SoulshattersFrame.Name = "SoulshattersFrame"
+SoulshattersFrame.Parent = Main
+SoulshattersFrame.BackgroundColor3 = Color3.fromRGB(47, 51, 118)
+SoulshattersFrame.Position = UDim2.new(0.372395843, 0, 0.135568514, 0)
+SoulshattersFrame.Size = UDim2.new(0.458984375, 0, 0.724489808, 0)
+SoulshattersFrame.Visible = false
+
+SoulshattersScrollFrame.Name = "SoulshattersScrollFrame"
+SoulshattersScrollFrame.Parent = SoulshattersFrame
+SoulshattersScrollFrame.Active = true
+SoulshattersScrollFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SoulshattersScrollFrame.BackgroundTransparency = 1.000
+SoulshattersScrollFrame.BorderSizePixel = 0
+SoulshattersScrollFrame.Position = UDim2.new(0.00851063803, 0, 0.179074451, 0)
+SoulshattersScrollFrame.Size = UDim2.new(0.978723407, 0, 0.794768631, 0)
+
+SweetHeart.Name = "SweetHeart"
+SweetHeart.Parent = SoulshattersScrollFrame
+SweetHeart.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+SweetHeart.BorderSizePixel = 0
+SweetHeart.Position = UDim2.new(0.0130434781, 0, 0.0315257385, 0)
+SweetHeart.Size = UDim2.new(0.308695644, 0, 0.0625174865, 0)
+SweetHeart.Font = Enum.Font.SourceSansBold
+SweetHeart.Text = "Sweetheart (EXECUTE ON CHARACTER SELECTION MENU)"
+SweetHeart.TextColor3 = Color3.fromRGB(255, 255, 255)
+SweetHeart.TextScaled = true
+SweetHeart.TextSize = 14.000
+SweetHeart.TextWrapped = true
+
+TuskActFour.Name = "TuskActFour"
+TuskActFour.Parent = SoulshattersScrollFrame
+TuskActFour.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+TuskActFour.BorderSizePixel = 0
+TuskActFour.Position = UDim2.new(0.333333313, 0, 0.0305121876, 0)
+TuskActFour.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+TuskActFour.Font = Enum.Font.SourceSansBold
+TuskActFour.Text = "Tusk Act 4 (EXECUTE ON XSANS/XCHARA)"
+TuskActFour.TextColor3 = Color3.fromRGB(255, 255, 255)
+TuskActFour.TextScaled = true
+TuskActFour.TextSize = 14.000
+TuskActFour.TextWrapped = true
+
+TrueBadtimeSans.Name = "TrueBadtimeSans"
+TrueBadtimeSans.Parent = SoulshattersScrollFrame
+TrueBadtimeSans.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+TrueBadtimeSans.BorderSizePixel = 0
+TrueBadtimeSans.Position = UDim2.new(0.65507251, 0, 0.0305121876, 0)
+TrueBadtimeSans.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+TrueBadtimeSans.Font = Enum.Font.SourceSansBold
+TrueBadtimeSans.Text = "TrueBadtimeSans (EXECUTE ON OLD UT:SANS)"
+TrueBadtimeSans.TextColor3 = Color3.fromRGB(255, 255, 255)
+TrueBadtimeSans.TextScaled = true
+TrueBadtimeSans.TextSize = 14.000
+TrueBadtimeSans.TextWrapped = true
+
+HorrorSans.Name = "HorrorSans"
+HorrorSans.Parent = SoulshattersScrollFrame
+HorrorSans.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+HorrorSans.BorderSizePixel = 0
+HorrorSans.Position = UDim2.new(0.333333313, 0, 0.112001121, 0)
+HorrorSans.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+HorrorSans.Font = Enum.Font.SourceSansBold
+HorrorSans.Text = "Horror Sans (EXECUTE ON CHARACTER SELECTION MENU)"
+HorrorSans.TextColor3 = Color3.fromRGB(255, 255, 255)
+HorrorSans.TextScaled = true
+HorrorSans.TextSize = 14.000
+HorrorSans.TextWrapped = true
+
+HardmodeSans.Name = "HardmodeSans"
+HardmodeSans.Parent = SoulshattersScrollFrame
+HardmodeSans.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+HardmodeSans.BorderSizePixel = 0
+HardmodeSans.Position = UDim2.new(0.65507251, 0, 0.112001121, 0)
+HardmodeSans.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+HardmodeSans.Font = Enum.Font.SourceSansBold
+HardmodeSans.Text = "Hard mode Sans (EXECUTE ON CHARACTER SELECTION MENU)"
+HardmodeSans.TextColor3 = Color3.fromRGB(255, 255, 255)
+HardmodeSans.TextScaled = true
+HardmodeSans.TextSize = 14.000
+HardmodeSans.TextWrapped = true
+
+Omori.Name = "Omori"
+Omori.Parent = SoulshattersScrollFrame
+Omori.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+Omori.BorderSizePixel = 0
+Omori.Position = UDim2.new(0.0101449266, 0, 0.112001121, 0)
+Omori.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+Omori.Font = Enum.Font.SourceSansBold
+Omori.Text = "Omori (EXECUTE ON CHARACTER SELECTION MENU)"
+Omori.TextColor3 = Color3.fromRGB(255, 255, 255)
+Omori.TextScaled = true
+Omori.TextSize = 14.000
+Omori.TextWrapped = true
+
+NoMoreDealsChara.Name = "NoMoreDealsChara"
+NoMoreDealsChara.Parent = SoulshattersScrollFrame
+NoMoreDealsChara.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+NoMoreDealsChara.BorderSizePixel = 0
+NoMoreDealsChara.Position = UDim2.new(0.0101449266, 0, 0.193490058, 0)
+NoMoreDealsChara.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+NoMoreDealsChara.Font = Enum.Font.SourceSansBold
+NoMoreDealsChara.Text = "NoMoreDealsChara (EXECUTE ON GT: CHARA)"
+NoMoreDealsChara.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoMoreDealsChara.TextScaled = true
+NoMoreDealsChara.TextSize = 14.000
+NoMoreDealsChara.TextWrapped = true
+
+Gaster.Name = "Gaster"
+Gaster.Parent = SoulshattersScrollFrame
+Gaster.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+Gaster.BorderSizePixel = 0
+Gaster.Position = UDim2.new(0.333333313, 0, 0.193490058, 0)
+Gaster.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+Gaster.Font = Enum.Font.SourceSansBold
+Gaster.Text = "Gaster (EXECUTE ON CHARACTER SELECTION MENU)"
+Gaster.TextColor3 = Color3.fromRGB(255, 255, 255)
+Gaster.TextScaled = true
+Gaster.TextSize = 14.000
+Gaster.TextWrapped = true
+
+SandsUndertale.Name = "SandsUndertale"
+SandsUndertale.Parent = SoulshattersScrollFrame
+SandsUndertale.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+SandsUndertale.BorderSizePixel = 0
+SandsUndertale.Position = UDim2.new(0.65507251, 0, 0.193490058, 0)
+SandsUndertale.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+SandsUndertale.Font = Enum.Font.SourceSansBold
+SandsUndertale.Text = "Sands Undertale (EXECUTE ON OLD UT: SANS)"
+SandsUndertale.TextColor3 = Color3.fromRGB(255, 255, 255)
+SandsUndertale.TextScaled = true
+SandsUndertale.TextSize = 14.000
+SandsUndertale.TextWrapped = true
+
+GER.Name = "GER"
+GER.Parent = SoulshattersScrollFrame
+GER.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+GER.BorderSizePixel = 0
+GER.Position = UDim2.new(0.65507251, 0, 0.277997106, 0)
+GER.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+GER.Font = Enum.Font.SourceSansBold
+GER.Text = "GER (EXECUTE ON XSANS AND PUSH \"P\")"
+GER.TextColor3 = Color3.fromRGB(255, 255, 255)
+GER.TextScaled = true
+GER.TextSize = 14.000
+GER.TextWrapped = true
+
+BettyVersionTwo.Name = "BettyVersionTwo"
+BettyVersionTwo.Parent = SoulshattersScrollFrame
+BettyVersionTwo.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+BettyVersionTwo.BorderSizePixel = 0
+BettyVersionTwo.Position = UDim2.new(0.333333313, 0, 0.277997106, 0)
+BettyVersionTwo.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+BettyVersionTwo.Font = Enum.Font.SourceSansBold
+BettyVersionTwo.Text = "Betty V.2 (EXECUTE ON CHARACTER SELECTION MENU)"
+BettyVersionTwo.TextColor3 = Color3.fromRGB(255, 255, 255)
+BettyVersionTwo.TextScaled = true
+BettyVersionTwo.TextSize = 14.000
+BettyVersionTwo.TextWrapped = true
+
+DusttrustSans.Name = "DusttrustSans"
+DusttrustSans.Parent = SoulshattersScrollFrame
+DusttrustSans.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+DusttrustSans.BorderSizePixel = 0
+DusttrustSans.Position = UDim2.new(0.0101449266, 0, 0.277997106, 0)
+DusttrustSans.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+DusttrustSans.Font = Enum.Font.SourceSansBold
+DusttrustSans.Text = "Dusttrust Sans (EXECUTE ON OLD UT:SANS)"
+DusttrustSans.TextColor3 = Color3.fromRGB(255, 255, 255)
+DusttrustSans.TextScaled = true
+DusttrustSans.TextSize = 14.000
+DusttrustSans.TextWrapped = true
+
+UnderPlayer.Name = "UnderPlayer"
+UnderPlayer.Parent = SoulshattersScrollFrame
+UnderPlayer.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+UnderPlayer.BorderSizePixel = 0
+UnderPlayer.Position = UDim2.new(0.0101449266, 0, 0.361498117, 0)
+UnderPlayer.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+UnderPlayer.Font = Enum.Font.SourceSansBold
+UnderPlayer.Text = "Underplayer (EXECUTE ON XSANS)"
+UnderPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnderPlayer.TextScaled = true
+UnderPlayer.TextSize = 14.000
+UnderPlayer.TextWrapped = true
+
+Title_2.Name = "Title"
+Title_2.Parent = SoulshattersFrame
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0099290777, 0, 0.018108651, 0)
+Title_2.Size = UDim2.new(0.978723407, 0, 0.118712276, 0)
+Title_2.Font = Enum.Font.SourceSansBold
+Title_2.Text = "Soulshatters Scripts"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+LumberTycoon2Frame.Name = "LumberTycoon2Frame"
+LumberTycoon2Frame.Parent = Main
+LumberTycoon2Frame.BackgroundColor3 = Color3.fromRGB(47, 51, 118)
+LumberTycoon2Frame.Position = UDim2.new(0.372395843, 0, 0.135568514, 0)
+LumberTycoon2Frame.Size = UDim2.new(0.458984375, 0, 0.724489808, 0)
+LumberTycoon2Frame.Visible = false
+
+Title_3.Name = "Title"
+Title_3.Parent = LumberTycoon2Frame
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(0.0099290777, 0, 0.018108651, 0)
+Title_3.Size = UDim2.new(0.978723407, 0, 0.118712276, 0)
+Title_3.Font = Enum.Font.SourceSansBold
+Title_3.Text = "Lumber Tycoon 2 Scripts"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+LumberScriptsScrollFrame.Name = "LumberScriptsScrollFrame"
+LumberScriptsScrollFrame.Parent = LumberTycoon2Frame
+LumberScriptsScrollFrame.Active = true
+LumberScriptsScrollFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LumberScriptsScrollFrame.BackgroundTransparency = 1.000
+LumberScriptsScrollFrame.BorderSizePixel = 0
+LumberScriptsScrollFrame.Position = UDim2.new(0.00851063803, 0, 0.179074451, 0)
+LumberScriptsScrollFrame.Size = UDim2.new(0.978723407, 0, 0.794768631, 0)
+
+BarkUI.Name = "BarkUI"
+BarkUI.Parent = LumberScriptsScrollFrame
+BarkUI.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+BarkUI.BorderSizePixel = 0
+BarkUI.Position = UDim2.new(0.0231884047, 0, 0.0278075952, 0)
+BarkUI.Size = UDim2.new(0.289855063, 0, 0.0663093105, 0)
+BarkUI.Font = Enum.Font.SourceSansBold
+BarkUI.Text = "BarkUI"
+BarkUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+BarkUI.TextScaled = true
+BarkUI.TextSize = 14.000
+BarkUI.TextWrapped = true
+
+CrazyMultiverseTimelineFrame.Name = "CrazyMultiverseTimelineFrame"
+CrazyMultiverseTimelineFrame.Parent = Main
+CrazyMultiverseTimelineFrame.BackgroundColor3 = Color3.fromRGB(47, 51, 118)
+CrazyMultiverseTimelineFrame.Position = UDim2.new(0.372395843, 0, 0.135568514, 0)
+CrazyMultiverseTimelineFrame.Size = UDim2.new(0.458984375, 0, 0.724489808, 0)
+CrazyMultiverseTimelineFrame.Visible = false
+
+CrazyMultiverseScrollFrame.Name = "CrazyMultiverseScrollFrame"
+CrazyMultiverseScrollFrame.Parent = CrazyMultiverseTimelineFrame
+CrazyMultiverseScrollFrame.Active = true
+CrazyMultiverseScrollFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CrazyMultiverseScrollFrame.BackgroundTransparency = 1.000
+CrazyMultiverseScrollFrame.BorderSizePixel = 0
+CrazyMultiverseScrollFrame.Position = UDim2.new(0.00851063803, 0, 0.179074451, 0)
+CrazyMultiverseScrollFrame.Size = UDim2.new(0.978723407, 0, 0.794768631, 0)
+
+AutoFarm.Name = "AutoFarm"
+AutoFarm.Parent = CrazyMultiverseScrollFrame
+AutoFarm.BackgroundColor3 = Color3.fromRGB(98, 140, 255)
+AutoFarm.BorderSizePixel = 0
+AutoFarm.Position = UDim2.new(0.0260869563, 0, 0.020120725, 0)
+AutoFarm.Size = UDim2.new(0.308999985, 0, 0.063000001, 0)
+AutoFarm.Font = Enum.Font.SourceSansBold
+AutoFarm.Text = "AutoFarm"
+AutoFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoFarm.TextScaled = true
+AutoFarm.TextSize = 14.000
+AutoFarm.TextWrapped = true
+
+Title_4.Name = "Title"
+Title_4.Parent = CrazyMultiverseTimelineFrame
+Title_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.BackgroundTransparency = 1.000
+Title_4.BorderSizePixel = 0
+Title_4.Position = UDim2.new(0.0099290777, 0, 0.018108651, 0)
+Title_4.Size = UDim2.new(0.978723407, 0, 0.118712276, 0)
+Title_4.Font = Enum.Font.SourceSansBold
+Title_4.Text = "Crazy Multiverse Timeline Scripts"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextScaled = true
+Title_4.TextSize = 14.000
+Title_4.TextWrapped = true
+
+-- Scripts:
+
+local function CYYGR_fake_script() -- DaKittyHub.MainController 
+	local script = Instance.new('LocalScript', DaKittyHub)
+
+	--SOULSHATTERS STUFF--
+	local SandsButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.SandsUndertale
+	SandsButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/SandsUndertale", true))()
+	end)
+	
+	local OmoriButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.Omori
+	OmoriButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/Omori", true))()	
+	end)
+	
+	local SweetButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.SweetHeart
+	SweetButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SweetHeartSS/main/SS", true))()	
+	end)
+	
+	local HardModeSansButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.HardmodeSans
+	HardModeSansButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/HardmodeSans", true))()
+	end)
+	
+	local GasterButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.Gaster
+	GasterButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/GasterSS", true))()
+	end)
+	
+	local BettyTwoButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.BettyVersionTwo
+	BettyTwoButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/BettyV2", true))()
+	end)
+	
+	local UnderplayerButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.UnderPlayer
+	UnderplayerButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DripGokuOfficial/SoulShattersScripts/main/UnderPlayer", true))()
+	end)
+	
+	local NoMoreDealsButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.NoMoreDealsChara
+	NoMoreDealsButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/NOMOREDEALSCHARA", true))()
+	end)
+	
+	local DustTrustButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.DusttrustSans
+	DustTrustButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/DUSTTRUST", true))()
+	end)
+	
+	local GERButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.GER
+	GERButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DripGokuOfficial/SoulShattersScripts/main/GER", true))()
+	end)
+	
+	local TuskButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.TuskActFour
+	TuskButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/TUSKACT4", true))()
+	end)
+	
+	local TrueBadtimeButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.TrueBadtimeSans
+	TrueBadtimeButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/TRUEBADTIMESANS", true))()
+	end)
+	
+	local HorrorButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.SoulshattersScrollFrame.HorrorSans
+	HorrorButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/SS-Scripts/main/HorrorSans", true))()
+	end)
+	
+	--CRAZY MULTIVERSE STUFF--
+	local AutoFarmButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.CrazyMultiverseTimelineFrame.CrazyMultiverseScrollFrame.AutoFarm
+	AutoFarmButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/UndertaleCorrupt/CrazyMultiverseTimeline/main/AutoFarmUI", true))()
+	end)
+	
+	--LUMBER TYCOON 2 STUFF--
+	local LumberBarkButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.LumberTycoon2Frame.LumberScriptsScrollFrame.BarkUI
+	LumberBarkButton.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')('bark > blood :)')
+	end)
+	
+	--SIDEBAR CONTROLLER--
+	local CrazyMultiverseTimelineSidebarButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.Sidebar.ScrollingFrame.CrazyMultiverseTimeline
+	CrazyMultiverseTimelineSidebarButton.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.Visible = false
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.LumberTycoon2Frame.Visible = false
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.CrazyMultiverseTimelineFrame.Visible = true
+	end)
+	
+	local SoulshattersSidebarButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.Sidebar.ScrollingFrame.Soulshatters
+	SoulshattersSidebarButton.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.Visible = true
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.LumberTycoon2Frame.Visible = false
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.CrazyMultiverseTimelineFrame.Visible = false
+	end)
+	
+	local LumberTycoonTwoSidebarButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.Sidebar.ScrollingFrame.LumberTycoon2
+	LumberTycoonTwoSidebarButton.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.SoulshattersFrame.Visible = false
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.LumberTycoon2Frame.Visible = true
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.CrazyMultiverseTimelineFrame.Visible = false
+	end)
+	
+	--Enter/Close--
+	local EnterGuiButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Enter
+	EnterGuiButton.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.Visible = true
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Enter.Visible = false
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Close.Visible = true
+	end)
+	
+	local CloseGuiButton = game.Players.LocalPlayer.PlayerGui.DaKittyHub.Close
+	CloseGuiButton.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Main.Visible = false
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Enter.Visible = true
+		game.Players.LocalPlayer.PlayerGui.DaKittyHub.Close.Visible = false
+	end)
+end
+coroutine.wrap(CYYGR_fake_script)()
